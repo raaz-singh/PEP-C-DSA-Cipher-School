@@ -13,4 +13,3 @@ int main(){
     myfunc1();
     myfunc();
 }
-
