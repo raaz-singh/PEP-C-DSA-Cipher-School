@@ -29,7 +29,7 @@ int binarySearch(int arr[], int size, int key){
 int main(){
     int arr[10] = {0, 2, 5, 8, 9, 6, 3, 1, 4, 7};
     int key = 3;
-    sort(arr, arr + 10);
-    int found = binarySearch(arr, 10, 3);
+    sort(arr, arr+10);
+    int found = binarySearch(arr, 10, key);
     cout << found << endl;
 }
