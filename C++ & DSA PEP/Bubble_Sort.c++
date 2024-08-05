@@ -18,9 +18,9 @@ void BubbleSort(int arr[], int size)
         {
             break;
         }
-        
     }
 
+    cout << "After sorting: " << endl;
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
@@ -29,6 +29,15 @@ void BubbleSort(int arr[], int size)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 8, 5, 6};
-    BubbleSort(arr, 6);
+    int n;
+    cout << "Enter the size of array: " << endl;
+    cin >> n;
+    int arr[n];
+    cout << "Enter the numbers: " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    
+    BubbleSort(arr, n);
 }
