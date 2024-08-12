@@ -40,9 +40,17 @@ void quickSort(int arr[], int s, int e) {
 }
 
 int main() {
-    int arr[5] = {30, 25, 17, 35, 40};
-    int n = 5;
+    int n;
+    cout << "Enter the size of array: " << endl;
+    cin >> n;
+    int arr[n];
+    cout << "Enter the elements: " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
     quickSort(arr, 0, n - 1);
+    cout << "Sorted Elements: " << endl;
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
